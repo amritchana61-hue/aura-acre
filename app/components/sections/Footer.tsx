@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {/* Column 1 — Logo + Tagline */}
           <div>
-            <div className="text-xl font-bold text-[#A7EBF2] tracking-tight">Aura &amp; Acre</div>
+            <div className="text-xl font-medium text-white tracking-tight">Aura &amp; Acre</div>
             <p className="text-sm text-white/50 mt-3 leading-relaxed">
               Your trusted partner for buying and selling real estate in Toronto.
             </p>
@@ -45,7 +45,7 @@ export default function Footer() {
 
           {/* Column 2 — Quick Links */}
           <div>
-            <div className="text-sm font-semibold text-[#54ACBF] tracking-wide uppercase mb-4">
+            <div className="text-sm font-semibold text-[#4A5D73] tracking-wide uppercase mb-4">
               Quick Links
             </div>
             {quickLinks.map((link) => (
@@ -53,7 +53,7 @@ export default function Footer() {
                 key={link}
                 href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
                 className="text-sm text-white/60 block mb-2 no-underline cursor-pointer"
-                whileHover={{ color: '#A7EBF2' }}
+                whileHover={{ color: '#B8C6D9' }}
                 transition={{ duration: 0.15 }}
               >
                 {link}
@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* Column 3 — Neighbourhoods */}
           <div>
-            <div className="text-sm font-semibold text-[#54ACBF] tracking-wide uppercase mb-4">
+            <div className="text-sm font-semibold text-[#4A5D73] tracking-wide uppercase mb-4">
               Neighbourhoods
             </div>
             {neighbourhoodLinks.map((n) => (
@@ -71,7 +71,7 @@ export default function Footer() {
                 key={n}
                 href="#neighbourhoods"
                 className="text-sm text-white/60 block mb-2 no-underline cursor-pointer"
-                whileHover={{ color: '#A7EBF2' }}
+                whileHover={{ color: '#B8C6D9' }}
                 transition={{ duration: 0.15 }}
               >
                 {n}
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Column 4 — Contact Info */}
           <div>
-            <div className="text-sm font-semibold text-[#54ACBF] tracking-wide uppercase mb-4">
+            <div className="text-sm font-semibold text-[#4A5D73] tracking-wide uppercase mb-4">
               Contact
             </div>
             <p className="text-sm text-white/60 mb-2">+1 (416) 555-0192</p>
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-[#A7EBF2]/10 mt-12 pt-8">
+        <div className="border-t border-[#B8C6D9]/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white/40">
               © 2025 Aura &amp; Acre. All rights reserved. MLS® listings updated daily.
@@ -109,8 +109,8 @@ export default function Footer() {
                   key={label}
                   href="#"
                   aria-label={label}
-                  className="text-[#54ACBF] cursor-pointer"
-                  whileHover={{ color: '#A7EBF2' }}
+                  className="text-[#4A5D73] cursor-pointer"
+                  whileHover={{ color: '#B8C6D9' }}
                   transition={{ duration: 0.15 }}
                 >
                   <Icon />

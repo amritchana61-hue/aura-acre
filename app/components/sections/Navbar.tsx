@@ -29,14 +29,14 @@ export default function Navbar() {
         style={{ top: 'max(1rem, env(safe-area-inset-top, 0px))' }}
       >
         <nav
-          className={`pointer-events-auto w-full max-w-6xl h-14 md:h-16 flex items-center justify-between px-5 md:px-8 rounded-full backdrop-blur-xl border border-[#A7EBF2]/15 bg-white/[0.06] [box-shadow:inset_0_1px_0_0_rgba(167,235,242,0.12)] ${
+          className={`pointer-events-auto w-full max-w-6xl h-14 md:h-16 flex items-center justify-between px-5 md:px-8 rounded-full backdrop-blur-xl border border-[#A7EBF2]/10 bg-white/[0.03] [box-shadow:inset_0_1px_0_0_rgba(167,235,242,0.08)] ${
             scrolled
-              ? 'border-[#A7EBF2]/25 bg-white/[0.10] [box-shadow:inset_0_1px_0_0_rgba(167,235,242,0.2),0_12px_40px_-8px_rgba(1,28,64,0.4)]'
+              ? 'border-[#A7EBF2]/20 bg-white/[0.07] [box-shadow:inset_0_1px_0_0_rgba(167,235,242,0.15),0_12px_40px_-8px_rgba(1,28,64,0.35)]'
               : ''
           }`}
         >
         {/* Logo */}
-        <a href="#hero" className="text-xl font-bold text-[#A7EBF2] tracking-tight">
+        <a href="#hero" className="text-xl font-medium text-white tracking-tight">
           Aura &amp; Acre
         </a>
 
@@ -46,8 +46,8 @@ export default function Navbar() {
             <motion.a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-[#A7EBF2] cursor-pointer no-underline"
-              whileHover={{ color: '#54ACBF' }}
+              className="text-sm font-light text-white cursor-pointer no-underline"
+              whileHover={{ color: '#B8C6D9' }}
               transition={{ duration: 0.15, ease: 'easeOut' }}
             >
               {link.label}
@@ -68,9 +68,9 @@ export default function Navbar() {
           onClick={() => setMenuOpen(true)}
           aria-label="Open menu"
         >
-          <span className="block w-6 h-0.5 bg-[#A7EBF2]" />
-          <span className="block w-6 h-0.5 bg-[#A7EBF2]" />
-          <span className="block w-6 h-0.5 bg-[#A7EBF2]" />
+          <span className="block w-6 h-0.5 bg-white" />
+          <span className="block w-6 h-0.5 bg-white" />
+          <span className="block w-6 h-0.5 bg-white" />
         </button>
         </nav>
       </div>
@@ -87,7 +87,7 @@ export default function Navbar() {
           >
             {/* Close button */}
             <button
-              className="absolute top-5 right-6 text-[#A7EBF2] text-3xl cursor-pointer"
+              className="absolute top-5 right-6 text-white text-3xl cursor-pointer"
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
             >
@@ -99,7 +99,7 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-2xl font-medium text-[#A7EBF2] no-underline"
+                  className="text-2xl font-light text-white no-underline"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

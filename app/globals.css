@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: 'Lexend Deca', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Montserrat', serif;
 }
 
 :root {
-  --color-ice: #A7EBF2;
-  --color-sky: #54ACBF;
-  --color-ocean: #26658C;
-  --color-navy: #023859;
+  --color-ice: #B8C6D9; /* Slate Mist */
+  --color-sky: #4A5D73; /* Slate Steel */
+  --color-ocean: #314357; /* Deep Slate */
+  --color-navy: #243342; /* Siding Navy */
   --color-midnight: #011C40;
 }
 
@@ -28,7 +29,7 @@ body {
   background-color: #1a1a1a;
   background-attachment: fixed;
   min-height: 100vh;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #FFFFFF;
 }
 

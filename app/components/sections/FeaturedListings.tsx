@@ -46,7 +46,7 @@ export default function FeaturedListings() {
 
   return (
     <SectionWrapper id="listings">
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#A7EBF2] tracking-tight leading-tight mb-12">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#B8C6D9] tracking-tight leading-tight mb-12">
         Featured Properties
       </h2>
 
@@ -61,7 +61,7 @@ export default function FeaturedListings() {
           <motion.div
             key={listing.address}
             variants={itemVariants}
-            whileHover={{ scale: 1.02, boxShadow: '0 8px 32px rgba(84, 172, 191, 0.25)' }}
+            whileHover={{ scale: 1.02, boxShadow: '0 8px 32px rgba(184, 198, 217, 0.25)' }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
             className="rounded-2xl"
           >
@@ -78,13 +78,13 @@ export default function FeaturedListings() {
               </div>
 
               <div className="p-6">
-                <span className="inline-block text-xs font-medium text-[#54ACBF] bg-[#54ACBF]/15 rounded-full px-3 py-1 mb-3 tracking-wide">
+                <span className="inline-block text-xs font-medium text-[#4A5D73] bg-[#4A5D73]/15 rounded-full px-3 py-1 mb-3 tracking-wide">
                   {listing.neighbourhood}
                 </span>
                 <div className="text-base font-semibold text-white leading-snug">
                   {listing.address}
                 </div>
-                <div className="text-2xl font-bold text-[#A7EBF2] tracking-tight mt-1">
+                <div className="text-2xl font-bold text-[#B8C6D9] tracking-tight mt-1">
                   {listing.price}
                 </div>
                 <div className="flex gap-4 mt-3 text-sm text-white/60">

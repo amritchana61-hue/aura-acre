@@ -33,7 +33,7 @@ export default function HowItWorks() {
 
   return (
     <SectionWrapper id="how-it-works">
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#A7EBF2] tracking-tight leading-tight">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#B8C6D9] tracking-tight leading-tight">
         How It Works
       </h2>
 
@@ -45,15 +45,15 @@ export default function HowItWorks() {
         animate={isInView ? 'visible' : 'hidden'}
       >
         {/* Dashed connector line — desktop only */}
-        <div className="hidden md:block absolute top-10 left-1/4 right-1/4 border-t border-dashed border-[#54ACBF]/30 z-0" />
+        <div className="hidden md:block absolute top-10 left-1/4 right-1/4 border-t border-dashed border-[#4A5D73]/30 z-0" />
 
         {steps.map((step) => (
           <motion.div key={step.number} variants={itemVariants} className="relative z-[10]">
             <GlassPanel className="p-8 text-center">
-              <div className="w-12 h-12 rounded-full bg-[#26658C] flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 rounded-full bg-[#314357] flex items-center justify-center mx-auto mb-4">
                 <span className="text-lg font-bold text-white">{step.number}</span>
               </div>
-              <h3 className="text-xl font-semibold text-[#A7EBF2] mt-2 tracking-tight">
+              <h3 className="text-xl font-semibold text-[#B8C6D9] mt-2 tracking-tight">
                 {step.title}
               </h3>
               <p className="text-sm text-white/60 mt-3 leading-relaxed">{step.description}</p>

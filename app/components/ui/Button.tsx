@@ -21,8 +21,8 @@ export default function Button({
 }: ButtonProps) {
   const base =
     'font-semibold text-sm tracking-wide px-8 py-3 rounded-lg cursor-pointer'
-  const primary = 'bg-[#26658C] text-white'
-  const ghost = 'bg-transparent text-[#54ACBF] border border-[#54ACBF]'
+  const primary = 'bg-[#243342] text-white'
+  const ghost = 'bg-transparent text-[#B8C6D9] border border-[#B8C6D9]'
 
   return (
     <motion.button
@@ -31,8 +31,8 @@ export default function Button({
       className={`${base} ${variant === 'primary' ? primary : ghost} ${className}`}
       whileHover={
         variant === 'primary'
-          ? { backgroundColor: '#023859', scale: 1.01 }
-          : { backgroundColor: 'rgba(84, 172, 191, 0.1)', scale: 1.01 }
+          ? { backgroundColor: '#1E2B3E', scale: 1.01 }
+          : { backgroundColor: 'rgba(184, 198, 217, 0.1)', scale: 1.01 }
       }
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2, ease: 'easeOut' }}

@@ -50,7 +50,7 @@ export default function Neighbourhoods() {
 
   return (
     <SectionWrapper id="neighbourhoods">
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#A7EBF2] tracking-tight leading-tight mb-12">
+      <h2 className="text-3xl md:text-4xl font-semibold text-[#B8C6D9] tracking-tight leading-tight mb-12">
         Explore Toronto Neighbourhoods
       </h2>
 
@@ -98,7 +98,7 @@ export default function Neighbourhoods() {
             </motion.span>
 
             {/* Price */}
-            <span className="absolute bottom-4 right-4 z-[10] text-sm font-medium text-[#A7EBF2]">
+            <span className="absolute bottom-4 right-4 z-[10] text-sm font-medium text-[#B8C6D9]">
               {n.price}
             </span>
           </motion.div>

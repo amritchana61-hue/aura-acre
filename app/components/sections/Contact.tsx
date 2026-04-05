@@ -7,7 +7,7 @@ import GlassPanel from '../ui/GlassPanel'
 import Button from '../ui/Button'
 
 const inputClass =
-  'bg-white/[0.06] border border-[#54ACBF]/30 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#54ACBF] w-full font-sans text-base'
+  'bg-white/[0.06] border border-[#4A5D73]/30 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#4A5D73] w-full font-sans text-base'
 
 export default function Contact() {
   const [name, setName] = useState('')
@@ -42,7 +42,7 @@ export default function Contact() {
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-[#A7EBF2] tracking-tight leading-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#B8C6D9] tracking-tight leading-tight">
           Ready to Find Your Home?
         </h2>
         <p className="text-base text-white/70 mt-4 leading-relaxed">
@@ -52,14 +52,14 @@ export default function Contact() {
         {submitted ? (
           <GlassPanel className="mt-10 p-10 text-center">
             <div className="text-4xl mb-4">✓</div>
-            <p className="text-lg font-semibold text-[#A7EBF2]">
+            <p className="text-lg font-semibold text-[#B8C6D9]">
               Thanks! We&apos;ll be in touch within 24 hours.
             </p>
           </GlassPanel>
         ) : (
           <form className="mt-10 text-left" onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className="text-sm font-medium text-[#A7EBF2] mb-1 block tracking-wide">
+              <label className="text-sm font-medium text-[#B8C6D9] mb-1 block tracking-wide">
                 Name
               </label>
               <input
@@ -73,7 +73,7 @@ export default function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="text-sm font-medium text-[#A7EBF2] mb-1 block tracking-wide">
+              <label className="text-sm font-medium text-[#B8C6D9] mb-1 block tracking-wide">
                 Email
               </label>
               <input
@@ -87,7 +87,7 @@ export default function Contact() {
             </div>
 
             <div className="mb-4">
-              <label className="text-sm font-medium text-[#A7EBF2] mb-1 block tracking-wide">
+              <label className="text-sm font-medium text-[#B8C6D9] mb-1 block tracking-wide">
                 Phone
               </label>
               <input
@@ -115,7 +115,7 @@ export default function Contact() {
 
             {loading ? (
               <motion.div
-                className="w-full mt-2 bg-[#26658C] text-white font-semibold text-sm tracking-wide px-8 py-3 rounded-lg text-center cursor-not-allowed"
+                className="w-full mt-2 bg-[#314357] text-white font-semibold text-sm tracking-wide px-8 py-3 rounded-lg text-center cursor-not-allowed"
                 animate={{ opacity: [1, 0.5, 1] }}
                 transition={{ duration: 0.8, repeat: Infinity }}
               >

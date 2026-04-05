@@ -17,7 +17,7 @@ export default function StatsBar() {
 
   return (
     <div
-      className="w-full py-8 px-6 md:px-16 border-y border-[#A7EBF2]/10"
+      className="w-full py-8 px-6 md:px-16 border-y border-[#B8C6D9]/10"
       style={{ background: 'rgba(2, 56, 89, 0.4)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)' }}
     >
       <motion.div
@@ -29,9 +29,9 @@ export default function StatsBar() {
       >
         {stats.map((stat) => (
           <motion.div key={stat.label} variants={itemVariants}>
-            <div className="text-3xl md:text-4xl font-bold text-[#A7EBF2] tracking-tight">
-              {stat.value}
-            </div>
+        <div className="text-3xl md:text-4xl font-bold text-[#B8C6D9] tracking-tight">
+          {stat.value}
+        </div>
             <div className="text-sm font-medium text-white/60 mt-1 tracking-wide">
               {stat.label}
             </div>
