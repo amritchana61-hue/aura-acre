@@ -24,16 +24,17 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-14 md:h-16 flex items-center justify-between px-6 md:px-16 ${
-          scrolled ? 'border-b border-[#A7EBF2]/10' : ''
-        }`}
-        style={{
-          background: 'rgba(1, 28, 64, 0.6)',
-          backdropFilter: 'blur(20px)',
-          WebkitBackdropFilter: 'blur(20px)',
-        }}
+      <div
+        className="fixed left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-10 pointer-events-none"
+        style={{ top: 'max(1rem, env(safe-area-inset-top, 0px))' }}
       >
+        <nav
+          className={`pointer-events-auto w-full max-w-6xl h-14 md:h-16 flex items-center justify-between px-5 md:px-8 rounded-full backdrop-blur-xl border border-[#A7EBF2]/15 bg-white/[0.06] [box-shadow:inset_0_1px_0_0_rgba(167,235,242,0.12)] ${
+            scrolled
+              ? 'border-[#A7EBF2]/25 bg-white/[0.10] [box-shadow:inset_0_1px_0_0_rgba(167,235,242,0.2),0_12px_40px_-8px_rgba(1,28,64,0.4)]'
+              : ''
+          }`}
+        >
         {/* Logo */}
         <a href="#hero" className="text-xl font-bold text-[#A7EBF2] tracking-tight">
           Aura &amp; Acre
@@ -71,14 +72,14 @@ export default function Navbar() {
           <span className="block w-6 h-0.5 bg-[#A7EBF2]" />
           <span className="block w-6 h-0.5 bg-[#A7EBF2]" />
         </button>
-      </nav>
+        </nav>
+      </div>
 
       {/* Mobile drawer */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 z-[60] flex flex-col items-center justify-center backdrop-blur-xl"
-            style={{ background: 'rgba(1, 28, 64, 0.95)' }}
+            className="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-white/[0.08] backdrop-blur-2xl"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}

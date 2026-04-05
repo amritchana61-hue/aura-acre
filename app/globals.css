@@ -21,11 +21,11 @@ html {
 }
 
 body {
-  background: radial-gradient(ellipse at 0% 0%, #A7EBF2 0%, transparent 50%),
-              radial-gradient(ellipse at 100% 0%, #54ACBF 0%, transparent 50%),
-              radial-gradient(ellipse at 50% 100%, #26658C 0%, transparent 60%),
-              radial-gradient(ellipse at 0% 100%, #023859 0%, transparent 50%);
-  background-color: #011C40;
+  background: radial-gradient(ellipse at 0% 0%, #3a3a3a 0%, transparent 50%),
+              radial-gradient(ellipse at 100% 0%, #333333 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 100%, #2d2d2d 0%, transparent 60%),
+              radial-gradient(ellipse at 0% 100%, #353535 0%, transparent 50%);
+  background-color: #1a1a1a;
   background-attachment: fixed;
   min-height: 100vh;
   font-family: 'Lexend Deca', sans-serif;
